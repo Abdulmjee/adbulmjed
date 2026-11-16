@@ -393,26 +393,44 @@ section{
 }
 
 @media print {
-    body * {
-        visibility: hidden;
+    @page {
+        margin: 12mm;
     }
-    #cvModal, #cvModal * {
-        visibility: visible;
+
+    html, body {
+        background: #ffffff !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: auto !important;
+        overflow: visible !important;
     }
+
+    header, section, footer {
+        display: none !important;
+    }
+
     #cvModal {
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: #fff;
-        padding: 0;
+        display: block !important;
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        background: #ffffff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: visible !important;
     }
+
     #cvModal .cv-box {
-        box-shadow: none;
-        padding: 0;
-        max-width: 100%;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
     }
+
     .cv-top-bar {
-        display: none;
+        display: none !important;
     }
 }
 
