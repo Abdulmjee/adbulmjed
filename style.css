@@ -67,7 +67,7 @@ section{
     display: inline-block;
     margin-top: 10px;
     color: #152e4f;
-    font-size: 1.9em; /* تم تصغير الحجم هنا ليناسب النص الطويل */
+    font-size: 1.9em;
     font-weight: 600;
 }
 
@@ -154,7 +154,7 @@ section{
 
 .card{
     background-color: aliceblue;
-    width: 19em;
+    width: 21em; /* تم تكبير عرض البطاقة قليلاً ليحتوي الإيميل بالكامل */
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     padding: 25px;
     margin: 15px;
